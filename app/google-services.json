@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522381902293",
+    "project_id": "tablekotlin-5a9a9",
+    "storage_bucket": "tablekotlin-5a9a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522381902293:android:031a6aaf2222bebe993d5c",
+        "android_client_info": {
+          "package_name": "com.example.myapplication_dask_board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522381902293-vkpsinfo6rg5q44oudov0q5fs6brjcva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaBK88MICY3THMAZ7wsTHgwdd6MMTekao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522381902293-vkpsinfo6rg5q44oudov0q5fs6brjcva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
