@@ -13,6 +13,7 @@ class DialogHelper(act:MainActivity) {
         val builder = AlertDialog.Builder(act)
         val rootDialogElement = SignDialogBinding.inflate(act.layoutInflater)
         val view = rootDialogElement.root
+        builder.setView(view)
         if(index == DialogConst.SIGN_UP_STATE){
             rootDialogElement.tvSignTitle.text = act.resources.getString(R.string.aс_sign_up)
             rootDialogElement.btSignUpIn.text = act.resources.getString(R.string.sign_up_action)
@@ -20,16 +21,20 @@ class DialogHelper(act:MainActivity) {
             rootDialogElement.tvSignTitle.text = act.resources.getString(R.string.ac_sign_in)
             rootDialogElement.btSignUpIn.text = act.resources.getString(R.string.sign_in_action)
         }
+        val dialog = builder.create() //создаем диалог, получается теперь черех переменную можем показывать, закрывать и т.д. окно
         rootDialogElement.btSignUpIn.setOnClickListener{
+            dialog.dismiss()//спрятать окошко регистрации
 
-            if(index == DialogConst.SIGN_UP_STATE){
+            if(index == DialogConst.SIGN_UP_STATE){//тут проверка просто по тексту, идет регистрация или вход
                 accHelper.signUpWithEmail(rootDialogElement.edSignEmail.text.toString()
-                    ,rootDialogElement.edSignPassword.text.toString())
+                    ,rootDialogElement.edSignPassword.text.toString()) //мы регистрируемся и передаем еайл и пароль
             } else {
 
+                accHelper.signInWithEmail(rootDialogElement.edSignEmail.text.toString()
+                    ,rootDialogElement.edSignPassword.text.toString()) //мы входим и передаем еайл и пароль
             }
         }
-        builder.setView(view)
-        builder.show()
+
+        dialog.show()
     }
 }
