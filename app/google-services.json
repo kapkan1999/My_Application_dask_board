@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "522381902293-vkpsinfo6rg5q44oudov0q5fs6brjcva.apps.googleusercontent.com",
+          "client_id": "522381902293-gh4acp8fa3jsruec93dpkttcp3v7sr96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication_dask_board",
+            "certificate_hash": "fc26dcacd4432d530542ca2fe04e2f6428f7549c"
+          }
+        },
+        {
+          "client_id": "522381902293-hbruf3glujmd22ff23d519r0aa7vcj04.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "522381902293-vkpsinfo6rg5q44oudov0q5fs6brjcva.apps.googleusercontent.com",
+              "client_id": "522381902293-hbruf3glujmd22ff23d519r0aa7vcj04.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
